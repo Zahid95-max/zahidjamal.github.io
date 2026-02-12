@@ -1,86 +1,134 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zahid Jamal • Talent Profile</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 40px;
-      line-height: 1.6;
-      background: #f6f8fa;
-    }
-    .container {
-      max-width: 700px;
-      margin: auto;
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    h1 {
-      margin-top: 0;
-      color: #222;
-    }
-    h2 {
-      margin-top: 30px;
-      color: #444;
-    }
-    .section {
-      margin-bottom: 20px;
-    }
-    .tag {
-      display: inline-block;
-      padding: 6px 12px;
-      background: #e8eefc;
-      color: #1a3db4;
-      border-radius: 6px;
-      margin-right: 8px;
-      margin-bottom: 8px;
-      font-size: 14px;
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zahid Jamal • Interactive CV</title>
+  <meta name="description" content="Interactive CV of Zahid Jamal — Sales Planning & Strategy, compensation design, quota modeling, analytics." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <div class="container">
-    <h1>Hi, I'm Zahid Jamal</h1>
-    <p>Consultant – Sales Planning & Strategy</p>
+  <!-- Navigation -->
+  <header class="nav">
+    <a href="#home" class="logo">ZJ</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="themeToggle" aria-label="Toggle theme">🌙</button>
+  </header>
 
-    <div class="section">
-      <h2>About Me</h2>
-      <p>
-        I work at the intersection of sales planning, compensation design,
-        quota modeling, and analytics. I enjoy simplifying complex GTM problems
-        and building insights that drive leadership decisions.
-      </p>
+  <!-- Hero -->
+  <section id="home" class="hero reveal">
+    <img class="avatar" src="assets/profile.jpg" alt="Zahid Jamal headshot" />
+    <h1>Hi, I’m <span class="accent">Zahid Jamal</span></h1>
+    <p class="subtitle">Consultant — Sales Planning & Strategy</p>
+    <p class="tagline">I turn complex GTM, quota, and comp problems into simple, executive‑ready insights.</p>
+    <div class="cta">
+      <a class="btn" href="#projects">View Work</a>
+      <a class="btn outline" href="assets/ZahidJamal_CV.pdf" target="_blank" rel="noopener">Download CV</a>
     </div>
+  </section>
 
-    <div class="section">
-      <h2>Skills</h2>
-      <span class="tag">Sales Compensation</span>
-      <span class="tag">Quota Planning</span>
-      <span class="tag">Data Modeling</span>
-      <span class="tag">Power BI</span>
-      <span class="tag">SQL</span>
-      <span class="tag">Storytelling</span>
-    </div>
+  <!-- About -->
+  <section id="about" class="section reveal">
+    <h2>About Me</h2>
+    <p>
+      I build data‑driven <strong>sales compensation</strong> and <strong>quota models</strong> that align incentives with strategy,
+      and craft clear narratives leaders can act on. Comfortable with ambiguity, quick with numbers, and obsessed with clean storytelling.
+    </p>
+    <ul class="highlights">
+      <li>Comp plan analysis for long‑cycle specialist motions</li>
+      <li>Scenario modeling (thresholds, accelerators, cost of sales)</li>
+      <li>Quota quality reviews and risk guardrails</li>
+    </ul>
+  </section>
 
-    <div class="section">
-      <h2>Experience Highlights</h2>
-      <ul>
-        <li>Designed and analyzed comp impacts for specialist seller motions.</li>
-        <li>Built scenario models to assess payout volatility.</li>
-        <li>Partnered with leadership on quota cycle redesign strategy.</li>
-      </ul>
+  <!-- Experience (timeline) -->
+  <section id="experience" class="section reveal">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="item">
+        <div class="when">2024 — Present</div>
+        <div class="card">
+          <h3>Consultant, Sales Planning & Strategy</h3>
+          <p>Designed insights on accelerated pay curves; modeled payout volatility; advised on annual/H1 quota cycles for lumpy motions.</p>
+          <ul>
+            <li>Built scenario simulator to compare old vs new curves</li>
+            <li>Reduced payout lumpiness via draw/threshold tweaks</li>
+            <li>Created exec one‑pagers and talk tracks</li>
+          </ul>
+        </div>
+      </div>
+      <div class="item">
+        <div class="when">Prior Roles</div>
+        <div class="card">
+          <h3>Strategy & Analytics (selected highlights)</h3>
+          <ul>
+            <li>Territory & quota planning across regions</li>
+            <li>Dashboards for attainment, pipeline health, and risk</li>
+            <li>Program management for high‑stakes initiatives</li>
+          </ul>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="section">
-      <h2>Contact</h2>
-      <p>Email: your-email@example.com</p>
-      <p>LinkedIn: linkedin.com/in/your-profile</p>
+  <!-- Skills -->
+  <section id="skills" class="section reveal">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill"><span>Sales Comp Design</span><div class="bar"><i style="width:92%"></i></div></div>
+      <div class="skill"><span>Quota Modeling</span>     <div class="bar"><i style="width:88%"></i></div></div>
+      <div class="skill"><span>Scenario Analysis</span>   <div class="bar"><i style="width:90%"></i></div></div>
+      <div class="skill"><span>Power BI / Excel</span>    <div class="bar"><i style="width:85%"></i></div></div>
+      <div class="skill"><span>SQL (basics)</span>        <div class="bar"><i style="width:65%"></i></div></div>
+      <div class="skill"><span>Storytelling</span>        <div class="bar"><i style="width:95%"></i></div></div>
     </div>
-  </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section reveal">
+    <h2>Selected Projects</h2>
+    <div class="grid">
+      <a class="tile" href="#" target="_blank" rel="noopener">
+        <img src="assets/project-curve.png" alt="Pay curve simulator" />
+        <h3>Accelerated Pay Curve Simulator</h3>
+        <p>Compares payout dispersion under old vs new models; adds draws, retro‑unlock, H1/H2 gates.</p>
+        <span class="pill">Modeling</span><span class="pill">Comp</span>
+      </a>
+      <a class="tile" href="#" target="_blank" rel="noopener">
+        <img src="assets/project-quota.png" alt="Quota playbook" />
+        <h3>Quota Quality Review Playbook</h3>
+        <p>Framework + analytics to assess territory risk and rebalance quotas mid‑cycle.</p>
+        <span class="pill">Quota</span><span class="pill">Framework</span>
+      </a>
+      <a class="tile" href="#" target="_blank" rel="noopener">
+        <img src="assets/project-dashboard.png" alt="Attainment dashboard" />
+        <h3>Attainment & Pipeline Dashboard</h3>
+        <p>Executive view of attainment bands, volatility, and forward risk signals.</p>
+        <span class="pill">Power BI</span><span class="pill">Analytics</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section reveal">
+    <h2>Contact</h2>
+    <p>
+      📧 <a href="mailto:your.email@example.com">your.email@example.com</a> &nbsp;|&nbsp;
+      💼 <a href="https://www.linkedin.com/in/yourhandle" target="_blank" rel="noopener">LinkedIn</a> &nbsp;|&nbsp;
+      💻 <a href="https://github.com/zahidjamal" target="_blank" rel="noopener">GitHub</a>
+    </p>
+  </section>
+
+  <footer class="footer">© <span id="year"></span> Zahid Jamal · Built with GitHub Pages</footer>
+  <script src="script.js"></script>
 </body>
 </html>
