@@ -70,7 +70,7 @@ h1{font-size:2.1rem;margin:.5rem 0}
 
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease, transform .6s ease}
 .reveal.visible{opacity:1;transform:none}
-``
+
 /* Center section headings consistently */
 .section h2,
 .section-subtitle {
@@ -79,15 +79,14 @@ h1{font-size:2.1rem;margin:.5rem 0}
 
 /* Keep the experience column centered on the page */
 #experience .timeline {
-  max-width: 900px;    /* same as other sections for visual consistency */
-  margin: 0 auto;      /* centers the timeline column */
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-/* Optional: if your H3s were drifting due to inline styles */
+/* Optional: tidy subtitle spacing */
 .section h3.section-subtitle {
   margin: 1.25rem auto 0.75rem;
 }
 
-/* Keep the text inside cards left-aligned for readability
-   (remove the next rule ONLY if you truly want centered text inside cards) */
+/* Keep text inside cards left-aligned for readability */
 #experience .card { text-align: left; }
