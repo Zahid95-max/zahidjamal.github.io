@@ -90,3 +90,30 @@ h1{font-size:2.1rem;margin:.5rem 0}
 
 /* Keep text inside cards left-aligned for readability */
 #experience .card { text-align: left; }
+/* Center headings */
+.section h2,
+.section-subtitle { text-align: center; }
+
+/* Keep experience column centered */
+#experience .timeline {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Subtitle spacing (tighter) */
+.section h3.section-subtitle {
+  margin: 1rem auto 0.5rem;
+}
+
+/* Thin divider between Dell Experience and Early Career */
+.experience-divider {
+  width: 140px;
+  height: 1px;
+  background: var(--border);
+  margin: 1rem auto 1rem; /* tighter gap between segments */
+  opacity: 0.9;
+}
+
+/* Optional: slightly tighter vertical rhythm inside experience */
+#experience .item { margin: 0.85rem 0; }
+#experience .card { text-align: left; }
