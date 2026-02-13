@@ -23,8 +23,8 @@ img{max-width:100%;display:block}
 
 .hero{padding:6rem 1.25rem 3rem;text-align:center;max-width:900px;margin:0 auto}
 .avatar{
-  width:200px;
-  height:200px;
+  width:225px;
+  height:225px;
   border-radius:10px;  /* square with slightly rounded corners */
   border:3px solid var(--border);
   margin:0 auto 1.5rem;
